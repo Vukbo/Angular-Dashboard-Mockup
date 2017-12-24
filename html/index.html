@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/showContainer.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+  </head>
+  <body>
+    <div class="container" ng-app="app" ng-controller="controller">
+      <div class="row">
+        <div class="col-md-4 max ">
+          <div class="content box" id="registerContentBox">
+            <div class="dataCoverImage">
+
+            </div>
+            <div class="diagDivider">
+              <h1 class="caliHeading1 headingMargin"> Register </h1>
+            </div>
+            <div class="inputFrame">
+              <div class="container-fluid">
+                <form name="register" id="registerForm" action="index.html" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input class="inputStandardSize" type="text" name="fName" value="" placeholder="Vorname" ng-model="fName" required>
+                    </div>
+                    <div class="col-md-6">
+                      <input class="inputStandardSize" type="text" name="lName" value="" placeholder="Nachname"ng-model="lName" required >
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input class="inputStandardSize" type="text" name="plz" value="" placeholder="PLZ" ng-model="plz">
+                    </div>
+                    <div class="col-md-6">
+                      <input class="inputStandardSize" type="text" name="place" value="" placeholder="Ort" ng-model="place">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <input class="inputStandardSize" type="text" name="address" value="" placeholder="Adresse" ng-model="address">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <input class="inputStandardSize" type="email" name="eMail" value="" placeholder="E-Mail" ng-model="eMail" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <input class="inputStandardSize" type="text" name="phoneNumber" value="" placeholder="Telefonnummer" ng-model="phoneNumber">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <input class="inputStandardSize" type="password" name="password" value="" placeholder="Password" ng-model="password" required>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-6">
+                      <input class="inputStandardSize" type="button" id="registerSend" value="Senden">
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 ">
+          <div class="row">
+            <div class="col-md-12 mini">
+              <div class="content box" id="loginContentBox">
+                <div class="loginFrame">
+                  <form name="login" id="loginForm"  method="post">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <input class="inputStandardSize" type="email" name="loginEMail" value="" placeholder="E-Mail" ng-model="loginEMail" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input class="inputStandardSize" type="password" name="loginPassword" value="" placeholder="password" ng-model="loginPassword" required>
+                    </div>
+                    <div class="col-md-6">
+                      <input id="loginSend" class="inputStandardSize" type="button" value="Login">
+                    </div>
+                  </div>
+                  </form>
+                </div>
+                <div class="bottomDivider">
+                  <div class="centerHeading">
+                    <h1 class="caliHeading1"> Login </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 mini">
+              <div class="content box" id="welcomeContentBox">
+                <div class="middleDivider">
+                  <div class="interactive" id="welcome">
+                    <div class="centerHeading">
+                      <h1 class="caliHeading1"> Welcome </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 medi">
+          <div class="content box slideIn" id="youContentBox">
+            <div class="topDivider">
+
+            </div>
+            <div class="bottomDividerLong">
+              <div class="centerHeading">
+                <h1 class="caliHeading1">  You </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-12 mini">
+              <div class="content box" id="backContentBox">
+                <div class="circle">
+                  <div class="interactive" id="back">
+                    <div class="centerHeading">
+                      <h1 class="caliHeading1"> Back </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script type="text/javascript" src="../js/formController.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+    <script type="text/javascript" src="../js/register.js"></script>
+  </body>
+</html>
